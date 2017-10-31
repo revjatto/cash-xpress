@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Loans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Date of birth</th>
+      <th>Age</th>
+      <th>Address</th>
+      <th>Telephone</th>
+      <th>Email address</th>
+      <th>Job status</th>
+      <th>Monthly wages</th>
+      <th>Company you work for</th>
+      <th>Company address</th>
+      <th>Company telephone</th>
+      <th>Your manager name</th>
+      <th>Loan amount</th>
+      <th>Load date</th>
+      <th>Loan expire</th>
+      <th>Loan purpose</th>
+      <th>Load agreement</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loans.each do |loan| %>
+      <tr>
+        <td><%= loan.first_name %></td>
+        <td><%= loan.last_name %></td>
+        <td><%= loan.date_of_birth %></td>
+        <td><%= loan.age %></td>
+        <td><%= loan.address %></td>
+        <td><%= loan.telephone %></td>
+        <td><%= loan.email_address %></td>
+        <td><%= loan.job_status %></td>
+        <td><%= loan.monthly_wages %></td>
+        <td><%= loan.company_you_work_for %></td>
+        <td><%= loan.company_address %></td>
+        <td><%= loan.company_telephone %></td>
+        <td><%= loan.your_manager_name %></td>
+        <td><%= loan.loan_amount %></td>
+        <td><%= loan.load_date %></td>
+        <td><%= loan.loan_expire %></td>
+        <td><%= loan.loan_purpose %></td>
+        <td><%= loan.load_agreement %></td>
+        <td><%= link_to 'Show', loan %></td>
+        <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
+        <td><%= link_to 'Destroy', loan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loan', new_loan_path %>

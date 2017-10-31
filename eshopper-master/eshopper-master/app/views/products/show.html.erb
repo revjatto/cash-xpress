@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container-fluid">
+    
+<div class="panel panel-success">
+<div class="panel-heading">
+    <p>   
+  
+  <strong><%= @product.title %></strong>
+</p>
+    </div>
+    <div class="panel-body">
+ 
+        <span><%= image_tag @product.image_url, :width => '300', class: 'product-img' %></span>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+</div>
+    </div>

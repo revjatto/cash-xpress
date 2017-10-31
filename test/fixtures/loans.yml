@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  date_of_birth: MyString
+  age: MyString
+  address: MyString
+  telephone: MyString
+  email_address: MyString
+  job_status: MyString
+  monthly_wages: MyString
+  company_you_work_for: MyString
+  company_address: MyString
+  company_telephone: MyString
+  your_manager_name: MyString
+  loan_amount: MyString
+  load_date: MyString
+  loan_expire: MyString
+  loan_purpose: MyText
+  load_agreement: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  date_of_birth: MyString
+  age: MyString
+  address: MyString
+  telephone: MyString
+  email_address: MyString
+  job_status: MyString
+  monthly_wages: MyString
+  company_you_work_for: MyString
+  company_address: MyString
+  company_telephone: MyString
+  your_manager_name: MyString
+  loan_amount: MyString
+  load_date: MyString
+  loan_expire: MyString
+  loan_purpose: MyText
+  load_agreement: MyString

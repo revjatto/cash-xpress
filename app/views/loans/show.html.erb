@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @loan.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @loan.last_name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @loan.date_of_birth %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @loan.age %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @loan.address %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @loan.telephone %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @loan.email_address %>
+</p>
+
+<p>
+  <strong>Job status:</strong>
+  <%= @loan.job_status %>
+</p>
+
+<p>
+  <strong>Monthly wages:</strong>
+  <%= @loan.monthly_wages %>
+</p>
+
+<p>
+  <strong>Company you work for:</strong>
+  <%= @loan.company_you_work_for %>
+</p>
+
+<p>
+  <strong>Company address:</strong>
+  <%= @loan.company_address %>
+</p>
+
+<p>
+  <strong>Company telephone:</strong>
+  <%= @loan.company_telephone %>
+</p>
+
+<p>
+  <strong>Your manager name:</strong>
+  <%= @loan.your_manager_name %>
+</p>
+
+<p>
+  <strong>Loan amount:</strong>
+  <%= @loan.loan_amount %>
+</p>
+
+<p>
+  <strong>Load date:</strong>
+  <%= @loan.load_date %>
+</p>
+
+<p>
+  <strong>Loan expire:</strong>
+  <%= @loan.loan_expire %>
+</p>
+
+<p>
+  <strong>Loan purpose:</strong>
+  <%= @loan.loan_purpose %>
+</p>
+
+<p>
+  <strong>Load agreement:</strong>
+  <%= @loan.load_agreement %>
+</p>
+
+<%= link_to 'Edit', edit_loan_path(@loan) %> |
+<%= link_to 'Back', loans_path %>

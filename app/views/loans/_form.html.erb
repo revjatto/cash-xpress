@@ -1,0 +1,52 @@
+
+<%= simple_form_for(@loan, html: { class: 'form-horizontal' }) do |f| %>
+
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :first_name, placeholder: 'Enter Your First Name', class: 'my-width' %>
+    <%= f.input :last_name, placeholder: 'Enter Your Surname' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.input :date_of_birth, placeholder: 'Enter your date of birth' %>
+    <%= f.input :age, placeholder: 'How old are you?' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.input :address, placeholder: 'Please enter your address' %>
+    <%= f.input :telephone, placeholder: 'Enter your Mobile or landline number' %>
+    <%= f.input :email_address, placeholder: 'Enter Your email address' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.input :job_status, as: :radio_buttons,
+    collection: ['Full Time', 'Part Term'] %>
+    </div>
+    <div class="form-group">
+    <%= f.input :monthly_wages, as: :check_boxes,
+    collection: [
+      'Monthly Salary',
+      'Weekly wages', 'Four weekly'] %>
+    </div>
+    <div class="form-group">
+    <%= f.input :company_you_work_for, placeholder: 'Enter the name of the company you work for' %>
+    </div>
+   
+    <div class="form-group">
+    <%= f.input :company_address, placeholder: 'Enter the company address here with the right postcode' %>
+    <%= f.input :company_telephone %>
+    <%= f.input :your_manager_name %>
+    </div>
+    <div class="form-group">
+    <%= f.input :loan_amount %>
+    <%= f.input :load_date %>
+    <%= f.input :loan_expire %>
+    <%= f.input :loan_purpose %>
+    <%= f.input :load_agreement %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
