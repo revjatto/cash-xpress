@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<h1>Loans Application Summary</h1>
 
-<h1>Loans</h1>
-
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>First name</th>
@@ -48,9 +48,7 @@
         <td><%= loan.loan_expire %></td>
         <td><%= loan.loan_purpose %></td>
         <td><%= loan.load_agreement %></td>
-        <td><%= link_to 'Show', loan %></td>
-        <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
-        <td><%= link_to 'Destroy', loan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', loan, class: 'btn btn-primary' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -58,4 +56,6 @@
 
 <br>
 
+
 <%= link_to 'New Loan', new_loan_path %>
+</div>

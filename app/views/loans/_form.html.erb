@@ -39,14 +39,14 @@
     <%= f.input :your_manager_name %>
     </div>
     <div class="form-group">
-    <%= f.input :loan_amount %>
-    <%= f.input :load_date %>
-    <%= f.input :loan_expire %>
+    <%= f.input :loan_amount, placeholder: 'Please enter the amount of loan you can avoid.' %>
+    <%= f.input :load_date, placeholder: 'Your loan will start today' %>
+    <%= f.input :loan_expire, placeholder: 'Your loan must be paid on your next payday' %>
     <%= f.input :loan_purpose %>
-    <%= f.input :load_agreement %>
+    <%= f.input :load_agreement, placeholder: 'It is imperative you sign the agreement' %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: 'btn btn-warning' %>
   </div>
 <% end %>

@@ -7,4 +7,6 @@ class PagesController < ApplicationController
 
   def disclaimer
   end
+  def loan_advantage
+  end
 end

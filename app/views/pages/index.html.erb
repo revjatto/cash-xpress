@@ -5,8 +5,9 @@
         <div class="col-lg-8 col-lg-offset-2 text-center">
             <h2 class="section-heading">Our Promise to you!</h2>
             <hr class="light">
-            <p class="text-faded">We won\'t charge you whether your application is successful or not. No membership fees, no application fees, no charges later - nothing, just fast loans. We'd rather give you a service that\'s good enough that you\'ll come back to us if you ever need to apply again. Interest and loan charges will apply in the same way they apply on our website.</p>
-            <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+            <p class="text-faded">We won't charge you whether your application is successful or not. No membership fees, no application fees, no charges later - nothing, just fast loans. We'd rather give you a service that's good enough that you'll come back to us if you ever need to apply again. Interest and loan charges will apply in the same way they apply on our website.</p>
+            <%= link_to 'Get Started', new_loan_path(@loan), class: "btn btn-default btn-xl" %>
+            
         </div>
     </div>
 </div>
@@ -26,29 +27,29 @@
         <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
                 <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                <h3>Sturdy Templates</h3>
-                <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                <h3>Loan Repayment</h3>
+                <p class="text-muted">Our loan repayment plan is reasonable. take only what you can repay back at the end of the month. Simply!</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
                 <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                <h3>Ready to Ship</h3>
-                <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                <h3>your Peace of Mind</h3>
+                <p class="text-muted">You can use your loan for anything!</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
                 <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                <h3>Up to Date</h3>
-                <p class="text-muted">We update dependencies to keep things fresh.</p>
+                <h3>No Excuses</h3>
+                <p class="text-muted">If you miss your repayment, we will pay you a visit at work.</p>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
                 <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
                 <h3>Made with Love</h3>
-                <p class="text-muted">You have to make your websites with love these days!</p>
+                <p class="text-muted">We are here to help, But we are not stupid!</p>
             </div>
         </div>
     </div>
@@ -155,7 +156,8 @@
 <div class="container text-center">
     <div class="call-to-action">
         <h2>Cash-Xpress payday Loan Advantage:</h2>
-        <a href="#" class="btn btn-default btn-xl wow tada">Read Now!</a>
+        <%= link_to 'Read More', pages_loan_advantage_path, class: 'btn btn-default btn-xl wow tada' %>
+       
     </div>
 </div>
 </aside>
